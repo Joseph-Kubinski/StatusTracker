@@ -22,7 +22,7 @@ class Acft(models.Model):
     acft_mission_status = models.CharField(
         max_length=255, choices=AMC_CHOICES, default=None, null=True, blank=True)
     crews_assigned = models.ForeignKey(
-        'Crew',
+        'users.Crew',
         on_delete=models.CASCADE, default=None, null=True, blank=True)
 
     def __str__(self):
