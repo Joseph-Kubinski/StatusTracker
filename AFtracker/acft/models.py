@@ -29,9 +29,9 @@ class Acft(models.Model):
         return (self.tail_number)
 
 
-class Crew(models.Model):
-    work_center = models.CharField(max_length=50)
-    crew_size = models.IntegerField(default=1)
+# class Crew(models.Model):
+#     work_center = models.CharField(max_length=50)
+#     crew_size = models.IntegerField(default=1)
 
-    def __str__(self):
-        return (self.work_center)
+#     def __str__(self):
+#         return (self.work_center)
